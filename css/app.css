@@ -1,0 +1,56 @@
+.top-bar ul,
+.top-bar {
+  background-color: #fdefcc;
+}
+
+.top-bar a {
+  color: #000;
+  font-size: 1rem;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.top-bar .logo {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+  padding: 0 0 0 20px;
+}
+
+.top-bar {
+  padding: 0.7rem; /*1rem = 32px*/
+}
+
+@media only screen and (max-width: 640px) {
+  .top-bar .logo {
+    display: none;
+  }
+}
+
+.sticky {
+  width: 100%;
+}
+
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+  border: 2px solid #fff;
+  /*background-color: #fff;*/
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+.slick-prev {
+  left: 45px;
+  z-index: 1;
+}
+.slick-next {
+  right: 80px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 3rem;
+  color: #000;
+}
+
+.hvr-fade {
+  border: 2px solid transparent;
+  transition: all .3s;
+}
