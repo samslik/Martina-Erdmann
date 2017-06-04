@@ -1,22 +1,47 @@
+body p {
+  font-family:'Josefin Sans', sans-serif;
+}
+
+body {
+  background-color: #fff;
+}
+
+.sticky-container {
+  z-index: 999;
+}
+
 .top-bar ul,
 .top-bar {
-  background-color: #fdefcc;
+  background-color: transparent;
 }
 
 .top-bar a {
+  width: 150px;
+  text-align: center;
   color: #000;
+  margin-top: 10px;
+  background-color: #fdefcc;
+  border: 1px solid #edcb9b;
+  border-radius: 35px;
   font-size: 1rem;
   font-family: 'Josefin Sans', sans-serif;
 }
 
 .top-bar .logo {
   font-family: 'Dancing Script', cursive;
+  width: auto;
   font-size: 2.5rem;
   padding: 0 0 0 20px;
+  background-color: transparent;
+  border: none;
 }
 
 .top-bar {
   padding: 0.7rem; /*1rem = 32px*/
+}
+
+.menu li a{
+  margin-right: 2rem;
 }
 
 @media only screen and (max-width: 640px) {
@@ -29,28 +54,122 @@
   width: 100%;
 }
 
-.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
-  border: 2px solid #fff;
-  /*background-color: #fff;*/
-  border-radius: 25px;
+.hvr-fade:hover,
+.hvr-fade:focus,
+.hvr-fade:active {
+  background-color: #fdfaf4;
+  border-radius: 35px;
   font-weight: 500;
 }
 
-.slick-prev {
-  left: 45px;
-  z-index: 1;
-}
-.slick-next {
-  right: 80px;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  font-size: 3rem;
-  color: #000;
+.hvr-fade {
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
 }
 
 .hvr-fade {
   border: 2px solid transparent;
   transition: all .3s;
+}
+
+.title-bar {
+  background-color: transparent;
+  color: #000;
+}
+
+.menu-icon::after {  /*hamburger color*/
+  background: #000;
+  box-shadow: 0 7px 0 #000, 0 14px 0 #000;
+}
+
+.copyrights{
+  float: right;
+}
+
+footer {
+  background-color: #878787;
+  height: 80px;
+  border-top: 2px solid #5a5a5a;
+}
+
+
+/* ============================================================
+  SECTIONS
+============================================================ */
+.fixed-to-top {
+position: relative;
+top: -100px;
+z-index: 99;
+  /*position: absolute;*/
+  /*height: 600px;*/
+  /*width: 100%;*/
+  /*top: 0;*/
+  /*display: block;*/
+}
+
+/*.content {*/
+ /*display: block;*/
+  /*position: absolute;*/
+  /*top:600px;*/
+/*}*/
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+section.module h2 {
+  margin-bottom: 40px;
+  font-family: "Roboto Slab", serif;
+  font-size: 30px;
+}
+section.module p {
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+section.module p:last-child {
+  margin-bottom: 0;
+}
+section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax {
+  height: 600px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+section.module.parallax h1 {
+  font-size: 48px;
+  line-height: 600px;
+  text-align: center;
+  font-family: 'Abril Fatface', serif;
+  color: #fdefcc;
+  /*color: #ff3f4d;*/
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.44);
+
+}
+section.module.parallax-1 {
+  background-image: url("../img/family.jpg");
+}
+
+@media all and (min-width: 600px) {
+  section.module h2 {
+    font-size: 42px;
+  }
+  section.module p {
+    font-size: 20px;
+  }
+  section.module.parallax h1 {
+    font-size: 96px;
+  }
+}
+@media all and (min-width: 960px) {
+  section.module.parallax h1 {
+    font-size: 160px;
+  }
 }

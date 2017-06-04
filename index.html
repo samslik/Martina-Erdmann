@@ -4,12 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
+    <title>Martina Erdmann Photography</title>
     <link rel="stylesheet" href="css/foundation.css">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:300" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:300|Open+Sans:300,400,600,700|Abril+Fatface|Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
+    <!--Hero Slider-->
+    <link rel="stylesheet" href="hero-slider/css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="hero-slider/css/style.css"> <!-- Resource style -->
+    <script src="hero-slider/js/modernizr.js"></script> <!-- Modernizr -->
   </head>
   <body>
     <!--NAVIGATION-->
@@ -28,12 +30,7 @@
           </div>
           <div class="top-bar-right align-right">
             <ul class="dropdown menu vertical medium-horizontal " data-dropdown-menu>
-              <li><a class="hvr-fade" href="#weddings">Weddings</a></li>
-              <li><a class="hvr-fade" href="#kids">Kids</a></li>
-              <li><a class="hvr-fade" href="#fashion">Fashion</a></li>
-              <li><a class="hvr-fade" href="#portraits">Portraits</a></li>
-              <li><a class="hvr-fade" href="#food">Food</a></li>
-              <li><a class="hvr-fade" href="#reportage">Reportage</a></li>
+              <li><a class="hvr-fade" href="#portfolio">Portfolio</a></li>
               <li><a class="hvr-fade" href="#about">About</a></li>
               <li><a class="hvr-fade" href="#prices">Prices</a></li>
               <li><a class="hvr-fade" href="#contact">Contact</a></li>
@@ -43,177 +40,86 @@
       </div>
     </div>
 
-    <div class="slider-for">
-      <div><img src="img/binoculars.jpg"> Hello!</div>
-      <div><img src="img/contact.jpg"></div>
-      <div><img src="img/carousel2.jpg"></div>
-      <div><img src="img/binoculars.jpg"></div>
-      <div><img src="img/contact.jpg"></div>
-      <div><img src="img/carousel2.jpg"></div>
+    <!--Hero Slider-->
+    <section class="cd-hero">
+      <ul class="cd-hero-slider autoplay">
+        <li class="selected">
+          <div class="cd-half-width">
+            <h2>Glamorous</h2>
+            <p>Lorem ipsum dolor sit</p>
+            <a href="#0" class="cd-btn">Fashion</a>
+          </div> <!-- .cd-half-width -->
 
+          <div class="cd-half-width cd-img-container">
 
-    </div>
-    <div class="slider-nav">
-      <div><img src="img/binoculars.jpg"></div>
-      <div><img src="img/contact.jpg"></div>
-      <div><img src="img/carousel2.jpg"></div>
-      <div><img src="img/binoculars.jpg"></div>
-      <div><img src="img/contact.jpg"></div>
-      <div><img src="img/carousel2.jpg"></div>
-    </div>
+          </div> <!-- .cd-half-width.cd-img-container -->
+        </li>
 
+        <li>
+          <div class="cd-half-width cd-img-container">
+            <!--<img src="" alt="tech 2">-->
+          </div> <!-- .cd-half-width.cd-img-container -->
+          <div class="cd-half-width">
+            <h2>Timeless</h2>
+            <p>Moments worth remembering</p>
+            <a href="#0" class="cd-btn">Family</a>
+          </div> <!-- .cd-half-width -->
+        </li>
 
-    <div class="row">
-      <div class="large-12 columns">
-        <h1>Welcome to Foundation</h1>
-      </div>
-    </div>
+        <li>
+          <div class="cd-full-width">
+            <h2>Slide title here</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, explicabo.</p>
+            <a href="#0" class="cd-btn">Start</a>
+          </div> <!-- .cd-full-width -->
+        </li>
 
-    <div class="row">
-      <div class="large-12 columns">
-        <div class="callout">
-          <h3>We&rsquo;re stoked you want to try Foundation! </h3>
-          <p>To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
-          <p>Once you've exhausted the fun in this document, you should check out:</p>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://zurb.com/university/code-skills">Foundation Code Skills</a><br />These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-            </div>
-            <div class="large-4 medium-4 columns">
-              <p><a href="http://foundation.zurb.com/forum">Foundation Forum</a><br />Join the Foundation community to ask a question or show off your knowlege.</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 medium-push-2 columns">
-              <p><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</p>
-            </div>
-            <div class="large-4 medium-4 medium-pull-2 columns">
-              <p><a href="https://twitter.com/ZURBfoundation">@zurbfoundation</a><br />Ping us on Twitter if you have questions. When you build something with this we'd love to see it (and send you a totally boss sticker).</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+        <li>
+          <div class="cd-full-width">
+            <h2>Mysterious</h2>
+            <p>Lorem ipsum dolor</p>
+            <a href="#0" class="cd-btn">Reportage</a>
+          </div> <!-- .cd-full-width -->
+        </li>
 
-    <div class="row">
-      <div class="large-8 medium-8 columns">
-        <h5>Here&rsquo;s your basic grid:</h5>
-        <!-- Grid Example -->
+        <li>
+          <div class="cd-full-width">
+            <h2>Delicious</h2>
+            <p>Lorem ipsum dolor</p>
+            <a href="#0" class="cd-btn">Food</a>
+          </div> <!-- .cd-full-width -->
+        </li>
+      </ul> <!-- .cd-hero-slider -->
 
-        <div class="row">
-          <div class="large-12 columns">
-            <div class="primary callout">
-              <p><strong>This is a twelve column section in a row.</strong> Each of these includes a div.callout element so you can see where the columns are - it's not required at all for the grid.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-          <div class="large-6 medium-6 columns">
-            <div class="primary callout">
-              <p>Six columns</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-          <div class="large-4 medium-4 small-4 columns">
-            <div class="primary callout">
-              <p>Four columns</p>
-            </div>
-          </div>
-        </div>
+      <div class="cd-slider-nav">
+        <nav>
+          <span class="cd-marker item-1"></span>
 
-        <hr />
+          <ul>
+            <li class="selected"><a href="#0"><img src="img/portraits.png" width="50px"></a></li>
+            <li><a href="#0"><img src="img/child.png" width="50px"></a></li>
+            <li><a href="#0"><img src="img/wedding.png" width="50px"></a></li>
+            <li><a href="#0"><img src="img/food.png" width="50px"></a></li>
+            <li><a href="#0"><img src="img/reportage.png" width="50px"></a></li>
+          </ul>
+        </nav>
+      </div> <!-- .cd-slider-nav -->
+    </section> <!-- .cd-hero -->
 
-        <h5>We bet you&rsquo;ll need a form somewhere:</h5>
-        <form>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns" />
-            </div>
-            <div class="large-4 medium-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="input-group">
-                  <input type="text" placeholder="small-9.columns" class="input-group-field" />
-                  <span class="input-group-label">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Select Box</label>
-              <select>
-                <option value="husker">Husker</option>
-                <option value="starbuck">Starbuck</option>
-                <option value="hotdog">Hot Dog</option>
-                <option value="apollo">Apollo</option>
-              </select>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-6 medium-6 columns">
-              <label>Choose Your Favorite</label>
-              <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Radio 1</label>
-              <input type="radio" name="pokemon" value="Blue" id="pokemonBlue"><label for="pokemonBlue">Radio 2</label>
-            </div>
-            <div class="large-6 medium-6 columns">
-              <label>Check these out</label>
-              <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
-              <input id="checkbox2" type="checkbox"><label for="checkbox2">Checkbox 2</label>
-            </div>
-          </div>
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-        </form>
-      </div>
+    <main class="cd-main-content">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
+      </p>
 
-      <div class="large-4 medium-4 columns">
-        <h5>Try one of these buttons:</h5>
-        <p><a href="#" class="button">Simple Button</a><br/>
-        <a href="#" class="success button">Success Btn</a><br/>
-        <a href="#" class="alert button">Alert Btn</a><br/>
-        <a href="#" class="secondary button">Secondary Btn</a></p>
-        <div class="callout">
-          <h5>So many components, girl!</h5>
-          <p>A whole kitchen sink of goodies comes with Foundation. Check out the docs to see them all, along with details on making them your own.</p>
-          <a href="http://foundation.zurb.com/sites/docs/" class="small button">Go to Foundation Docs</a>
-        </div>
-      </div>
-    </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit veniam quisquam, rem illum dicta cumque, voluptate fugiat impedit beatae rerum ratione, voluptates nisi magni delectus ab, eaque atque iste. Molestias incidunt nemo veniam alias nam nisi distinctio optio error architecto odit! Illo dicta nulla fugiat distinctio laudantium, corrupti eum unde.
+      </p>
+    </main> <!-- .cd-main-content -->
+
+     <footer>
+       <div class="copyrights">@Martina Erdmann 2017</div>
+     </footer>
 
     <script src="js/vendor/jquery.js"></script>
     <script src="js/vendor/what-input.js"></script>
@@ -222,29 +128,10 @@
     <!--Slick-->
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function(){
-        $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        fade: true,
-        asNavFor: '.slider-nav',
-        arrows: true,
-        nextArrow: '<button type="button" class="slick-next">Next</button>'
-    });
-        $('.slider-nav').slick({
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            asNavFor: '.slider-for',
-            dots: true,
-            centerMode: true,
-            focusOnSelect: true,
-            autoplay: true,
-            arrows: false
-        });
-    });
-    </script>
+  <!--Hero Slider-->
+  <script src="hero-slider/js/jquery-2.1.1.js"></script>
+  <script src="hero-slider/js/main.js"></script> <!-- Resource jQuery -->
+
   </body>
 </html>
 
