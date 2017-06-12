@@ -6,6 +6,10 @@ body {
   background-color: #fff;
 }
 
+.row {
+  width: 90%;
+}
+
 .top-bar ul,
 .top-bar {
   background-color: transparent;
@@ -18,7 +22,7 @@ body {
   margin-top: 10px;
   background-color: #fdefcc;
   border-radius: 35px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -117,6 +121,7 @@ section.module:last-child {
 }
 section.module h2 {
   margin-bottom: 40px;
+  text-align: center;
   font-family: "Roboto Slab", serif;
   font-size: 30px;
 }
@@ -177,4 +182,17 @@ section.module.parallax-1 {
 .title-bar{
   position: absolute;
   z-index: 999;
+}
+
+.thumb:hover {
+  opacity: 1;
+}
+
+.thumb {
+  opacity: .9;
+}
+
+.my-gallery img {
+  border: 2px solid #f1f1f1;
+  padding: 15px;
 }

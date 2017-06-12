@@ -2,6 +2,7 @@
  * Created by samslik on 05.06.17.
  */
 $(document).ready(function(){
+
     var initPhotoSwipeFromDOM = function(gallerySelector) {
 
         // parse slide data (url, title, size ...) from DOM elements
