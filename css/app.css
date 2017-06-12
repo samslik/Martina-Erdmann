@@ -6,22 +6,17 @@ body {
   background-color: #fff;
 }
 
-.sticky-container {
-  z-index: 999;
-}
-
 .top-bar ul,
 .top-bar {
   background-color: transparent;
 }
 
 .top-bar a {
-  width: 150px;
+  width: 100px;
   text-align: center;
   color: #000;
   margin-top: 10px;
   background-color: #fdefcc;
-  border: 1px solid #edcb9b;
   border-radius: 35px;
   font-size: 1rem;
   font-family: 'Josefin Sans', sans-serif;
@@ -37,11 +32,13 @@ body {
 }
 
 .top-bar {
-  padding: 0.7rem; /*1rem = 32px*/
+  padding: 0.5rem; /*1rem = 32px*/
+  width: 100%;
 }
 
 .menu li a{
   margin-right: 2rem;
+  padding: .3rem;
 }
 
 @media only screen and (max-width: 640px) {
@@ -50,26 +47,27 @@ body {
   }
 }
 
-.sticky {
-  width: 100%;
+.top-bar-right {
+  margin-top: 10px;
 }
 
-.hvr-fade:hover,
-.hvr-fade:focus,
-.hvr-fade:active {
+.top-bar-right li a:hover,
+.top-bar-right li a:focus,
+.top-bar-right li a:active {
   background-color: #fdfaf4;
   border-radius: 35px;
   font-weight: 500;
+  border: 2px solid #d8d7d5;
 }
 
-.hvr-fade {
+.top-bar-right li a {
   -webkit-transition: background-color 0.2s;
   -moz-transition: background-color 0.2s;
   transition: background-color 0.2s;
 }
 
-.hvr-fade {
-  border: 2px solid transparent;
+.top-bar-right li a {
+  border: 2px solid #efd9b3;
   transition: all .3s;
 }
 
@@ -99,7 +97,7 @@ footer {
 ============================================================ */
 .fixed-to-top {
 position: relative;
-top: -100px;
+top: 0;
 z-index: 99;
   /*position: absolute;*/
   /*height: 600px;*/
@@ -172,4 +170,11 @@ section.module.parallax-1 {
   section.module.parallax h1 {
     font-size: 160px;
   }
+}
+
+/*NAVIGATION ON TOP*/
+.top-bar,
+.title-bar{
+  position: absolute;
+  z-index: 999;
 }
