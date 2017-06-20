@@ -5,6 +5,7 @@ jQuery(document).ready(function($){
 	if ( slidesWrapper.length > 0 ) {
 		var primaryNav = $('.cd-primary-nav'),
 			sliderNav = $('.cd-slider-nav'),
+            sliderArrows = $('.cd-slider-arrows'),
 			navigationMarker = $('.cd-marker'),
 			slidesNumber = slidesWrapper.children('li').length,
 			visibleSlidePosition = 0,
@@ -21,7 +22,33 @@ jQuery(document).ready(function($){
 		primaryNav.on('click', function(event){
 			if($(event.target).is('.cd-primary-nav')) $(this).children('ul').toggleClass('is-visible');
 		});
-		
+
+        //update visible slide when user clicks next/prev arrows
+        sliderArrows.on('click', '.next-slide', function(event) {
+            event.preventDefault();
+            if (visibleSlidePosition < slidesNumber - 1) {
+                nextSlide(slidesWrapper.find('.selected'), slidesWrapper, sliderNav, visibleSlidePosition + 1);
+                visibleSlidePosition += 1;
+            } else {
+                prevSlide(slidesWrapper.find('.selected'), slidesWrapper, sliderNav, 0);
+                visibleSlidePosition = 0;
+            }
+            updateNavigationMarker(navigationMarker, visibleSlidePosition + 1);
+            updateSliderNavigation(sliderNav, visibleSlidePosition);
+        });
+        sliderArrows.on('click', '.prev-slide', function(event) {
+            event.preventDefault();
+            if (visibleSlidePosition > 0) {
+                prevSlide(slidesWrapper.find('.selected'), slidesWrapper, sliderNav, visibleSlidePosition - 1);
+                visibleSlidePosition -= 1;
+            } else {
+                nextSlide(slidesWrapper.find('.selected'), slidesWrapper, sliderNav, slidesNumber - 1);
+                visibleSlidePosition = slidesNumber - 1;
+            }
+            updateNavigationMarker(navigationMarker, visibleSlidePosition + 1);
+            updateSliderNavigation(sliderNav, visibleSlidePosition);
+        });
+
 		//change visible slide
 		sliderNav.on('click', 'li', function(event){
 			event.preventDefault();

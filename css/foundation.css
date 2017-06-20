@@ -3753,9 +3753,9 @@ a.thumbnail {
     content: ' '; }
   .top-bar::after {
     clear: both; }
-  .top-bar,
-  .top-bar ul {
-    background-color: #e6e6e6; }
+  /*.top-bar,*/
+  /*.top-bar ul {*/
+    /*background-color: #e6e6e6; }*/
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
