@@ -23,15 +23,16 @@ body {
   text-align: center;
   /*color: #555;*/
   color: black;
-  /*text-shadow: 1px 1px #555;*/
+  text-shadow: 1px 1px rgba(255, 255, 255, 0.35);
   margin-top: 10px;
   /*background-color: #fdefcc;*/
   /*border-radius: 35px;*/
   /*text-transform: capitalize;*/
   font-size: 1.1rem;
-  font-family: 'Josefin Sans', sans-serif;
-  font-weight: 300;
-  /*text-transform: uppercase;*/
+  /*font-family: 'Josefin Sans', sans-serif;*/
+  font-family: Oswald, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .top-bar .logo {
@@ -362,7 +363,8 @@ body {
 /*color: #fdefd9*/
 
 .line {
-  background-color: #fdefd9;
+  /*background-color: #fdefd9;*/
+  background-color: transparent;
   margin-top: 10px;
   height: 25px;
 }
