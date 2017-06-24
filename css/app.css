@@ -31,8 +31,9 @@ body {
   font-size: 1.1rem;
   /*font-family: 'Josefin Sans', sans-serif;*/
   font-family: Oswald, sans-serif;
-  font-weight: 700;
+  /*font-weight: 700;*/
   text-transform: uppercase;
+    border-bottom: 2px solid transparent;
 }
 
 .top-bar .logo {
@@ -51,8 +52,12 @@ body {
 }
 
 .top-bar {
-  padding: .5rem 0 .5rem 0; /*1rem = 32px*/
+  padding: 0; /*1rem = 32px*/
   width: 100%;
+}
+
+.top-bar-right {
+    margin-top: 15px;
 }
 
 .menu li a{
@@ -62,24 +67,125 @@ body {
 }
 
 .menu li:first-child {
-  padding-left: 25px;
+    padding-left: 25px;
 }
 
 .top-bar-left ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .top-bar-left ul li img {
-  left: 350px;
-  top: 8px;
-  position: absolute;
+    left: 350px;
+    top: 8px;
+    position: absolute;
+}
+
+.line {
+    /*background-color: #fdefd9;*/
+    background-color: transparent;
+    margin-top: 10px;
+    height: 25px;
+}
+
+.top-bar-right .selected-cat,
+.top-bar-right li a:hover,
+.top-bar-right li a:focus,
+.top-bar-right li a:active {
+    /*background-color: #fdfaf4;*/
+    /*border-radius: 35px;*/
+    font-weight: 700;
+    color: black;
+    border-bottom: 2px solid black;
+    border-radius: 0;
+    /*border: 2px solid #fdefd9;*/
+}
+
+@media only screen and (max-width: 1000px){
+    .menu li a{
+        margin-right: 5px;
+    }
+}
+
+@media only screen and (max-width: 888px){
+    .top-bar .logo{
+        font-size: 2.1rem;
+        padding-left:0;
+    }
+    .top-bar-left ul li img {
+        left: 230px;
+        top: 8px;
+        width: 60px;
+    }
+    .line {
+        margin-top: 0;
+    }
+    .menu li a{
+        font-size: .9rem;
+        width: 80px;
+    }
+    .top-bar {
+        margin-top: 10px;
+    }
 }
 
 
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 639px) {
+    .top-bar-left ul li img,
   .top-bar .logo {
     display: none;
   }
+    .menu li a:hover {
+        font-weight: normal;
+        border-bottom: 2px solid transparent;
+    }
+    .menu li{
+        display: block;
+        padding: 5px 5px 5px 10px;
+    }
+    .menu li:first-child {
+        margin-top: 15px;
+        padding-left: 10px;
+        text-align: left;
+    }
+    .menu li a{
+        text-align: left;
+    }
+    .dropdown {
+        background-color: #faf9fa;
+    }
+    .top-bar {
+        margin-left: 0;
+    }
+    .title-bar {
+       width: 100%
+    }
+    .logo-mobile li{
+        float: left
+    }
+    .title-bar-title {
+        position: absolute;
+        right: 45px;
+        top: 15px;
+        font-family: Oswald, serif;
+        font-weight: normal;
+    }
+    .menu-icon {
+        position: absolute;
+        right: 10px;
+        top: 15px;
+    }
+    .logo-mobile .logo {
+        font-family: 'Dancing Script', cursive;
+        color: black;
+        font-size: 22px;
+        margin-right: 5px;
+    }
+    .top-bar-right {
+        margin-top: -30px;
+    }
+    .title-bar ul {
+        list-style-type: none;
+    }
 }
 
 /*.top-bar-right {*/
@@ -89,18 +195,6 @@ body {
   /*border-right: none;*/
 /*}*/
 
-.top-bar-right .selected-cat,
-.top-bar-right li a:hover,
-.top-bar-right li a:focus,
-.top-bar-right li a:active {
-  /*background-color: #fdfaf4;*/
-  /*border-radius: 35px;*/
-  font-weight: 500;
-  color: black;
-  border-bottom: 2px solid black;
-  border-radius: 0;
-  /*border: 2px solid #fdefd9;*/
-}
 
 .top-bar-right li a {
   -webkit-transition: background-color 0.2s;
@@ -109,8 +203,6 @@ body {
 }
 
 .top-bar-right li a {
-  border: 2px solid transparent;
-  /*border-radius: 35px;*/
   transition: all .3s;
 }
 
@@ -226,10 +318,10 @@ section.module.parallax-1 {
 }
 
 /*NAVIGATION ON TOP*/
-.top-bar,
-.title-bar{
+.top-bar{
   position: absolute;
   z-index: 999;
+    margin-left: 0;
 }
 
 .thumb img {
@@ -362,24 +454,25 @@ body {
 /*color: #deb12a;*/
 /*color: #fdefd9*/
 
-.line {
-  /*background-color: #fdefd9;*/
-  background-color: transparent;
-  margin-top: 10px;
-  height: 25px;
-}
-
 /* ============================================================
   PORTFOLIO
 ============================================================ */
 
 .portfolio-title .column h1 {
-  margin-top: 80px;
+  margin-top: 120px;
   font-family: 'Josefin Sans', sans-serif;
   text-align: center;
   color: black;
+    font-size: 2.7rem;
 }
 
 .portfolio-title {
   margin-bottom: 35px;
+}
+
+@media only screen and (max-width: 639px) {
+    .portfolio-title .column h1 {
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
 }

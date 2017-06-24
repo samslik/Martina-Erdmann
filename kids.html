@@ -6,11 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Martina Erdmann Photography</title>
   <link rel="stylesheet" href="css/foundation.css">
-  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans:300|Open+Sans:300,400,600,700|Abril+Fatface|Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Oswald|Josefin+Sans:300|Open+Sans:300,400,600,700|Abril+Fatface|Roboto+Slab" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css">
   <!--Hero Slider-->
   <link rel="stylesheet" href="hero-slider/css/reset.css"> <!-- CSS reset -->
-  <link rel="stylesheet" href="hero-slider/css/style.css"> <!-- Resource style -->
   <script src="hero-slider/js/modernizr.js"></script> <!-- Modernizr -->
 
   <!--PHOTOSWIPE-->
@@ -32,36 +31,33 @@
 <body>
   <!--NAVIGATION-->
   <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
-    <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+    <ul class="logo-mobile">
+      <li><a class="logo active" href="#index">Martina Erdmann</a></li>
+      <li><img src="img/camera-paski-logo.png"width="60px"></li>
+    </ul>
+    <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
     <div class="title-bar-title">Menu</div>
   </div>
 
   <div class="top-bar" id="responsive-menu">
-    <div class="line">
-      <div class="top-bar-right show-for-medium-up">
-        <ul class="menu">
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#prices">Prices</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="top-bar-left show-for-medium-up">
-      <ul class="menu">
-        <li><a class="logo active" href="index.html">Martina Erdmann</a></li>
-        <li><img src="img/camera-logo.png"width="70px"></li>
+    <!--<div class="line">-->
+    <div class="top-bar-right show-for-medium-up">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="#about">Über mich</a></li>
+        <li><a href="#prices">Preise</a></li>
+        <li><a href="#contact">Kontakt</a></li>
       </ul>
+      <!--</div>-->
     </div>
-  </div>
-
     <div class="top-bar-left show-for-medium-up">
       <ul class="menu">
         <li><a class="logo active" href="#index">Martina Erdmann</a></li>
+        <li><img src="img/camera-paski-logo.png"width="90px"></li>
       </ul>
     </div>
   </div>
-
+  <!--END NAVIGATION-->
   <!--Prallax-->
 
   <main>
