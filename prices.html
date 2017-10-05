@@ -1,0 +1,170 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Martina Erdmann Photography</title>
+  <link rel="stylesheet" href="css/foundation.css">
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Oswald|Josefin+Sans:300|Open+Sans:300,400,600,700|Abril+Fatface|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <!--Hero Slider-->
+  <link rel="stylesheet" href="hero-slider/css/reset.css"> <!-- CSS reset -->
+  <script src="hero-slider/js/modernizr.js"></script> <!-- Modernizr -->
+
+  <!--PHOTOSWIPE-->
+  <!-- Core CSS file -->
+  <link rel="stylesheet" href="photoswipe/photoswipe.css">
+
+  <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+       In the folder of skin CSS file there are also:
+       - .png and .svg icons sprite,
+       - preloader.gif (for browsers that do not support CSS animations) -->
+  <link rel="stylesheet" href="photoswipe/default-skin/default-skin.css">
+
+  <!-- Core JS file -->
+  <script src="photoswipe/photoswipe.min.js"></script>
+
+  <!-- UI JS file -->
+  <script src="photoswipe/photoswipe-ui-default.min.js"></script>
+</head>
+<body>
+  <!--NAVIGATION-->
+  <div class="title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+    <ul class="logo-mobile">
+      <li><a class="logo active" href="#index">Martina Erdmann</a></li>
+      <li><img src="img/camera-paski-logo.png"width="60px"></li>
+    </ul>
+    <button class="menu-icon" type="button" data-toggle="responsive-menu"></button>
+    <div class="title-bar-title">Menu</div>
+  </div>
+
+  <div class="top-bar" id="responsive-menu">
+    <!--<div class="line">-->
+    <div class="top-bar-right show-for-medium-up">
+      <ul class="dropdown menu" data-dropdown-menu>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="about.html">Über mich</a></li>
+        <li><a class="menu-active" href="#prices">Preise</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+      </ul>
+      <!--</div>-->
+    </div>
+    <div class="top-bar-left show-for-medium-up">
+      <ul class="menu">
+        <li><a class="logo active" href="index.html">Martina Erdmann</a></li>
+        <li><img src="img/camera-paski-logo.png"width="90px"></li>
+      </ul>
+    </div>
+  </div>
+  <!--END NAVIGATION-->
+  <!--Prallax-->
+
+  <main>
+    <section class="module content">
+      <div class="row">
+        <div class="preise-text">
+        <p>
+          Ich bin offen für alles,
+          versuche während der Shoots eine entspannte, lockere Atmosphäre entstehen zu lassen, damit mein Model die Scheu vor dem Blitzlicht und der Kamera verliert.
+          Ich gehe geduldig und höfflich auf meine Kunden ein und bin immer für einen Spaß zu haben.<br />
+
+          Ich würde mich freuen mit Ihnen/dir zusammen zu arbeiten und mal schauen was wir für schöne Arbeiten entwickeln.<br />
+
+          Falls noch Fragen offen sind, schreibt mir doch einfach oder ruft an.<br />
+
+          Tina<br />
+
+          Mein Honorar ist je nach Auftrag unterschiedlich.
+        </p>
+      </div>
+    </div>
+    </section>
+
+    <!-- Root element of PhotoSwipe. Must have class pswp. -->
+    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+      <!-- Background of PhotoSwipe.
+           It's a separate element as animating opacity is faster than rgba(). -->
+      <div class="pswp__bg"></div>
+
+      <!-- Slides wrapper with overflow:hidden. -->
+      <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides.
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+          <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+          <div class="pswp__top-bar">
+
+            <!--  Controls are self-explanatory. Order can be changed. -->
+
+            <div class="pswp__counter"></div>
+
+            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+            <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+            <!-- element will get class pswp__preloader--active when preloader is running -->
+            <div class="pswp__preloader">
+              <div class="pswp__preloader__icn">
+                <div class="pswp__preloader__cut">
+                  <div class="pswp__preloader__donut"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+            <div class="pswp__share-tooltip"></div>
+          </div>
+
+          <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+          </button>
+
+          <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+          </button>
+
+          <div class="pswp__caption">
+            <div class="pswp__caption__center"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <div class="footer-bottom">
+    <footer>
+      <div class="copyrights">@Martina Erdmann 2017</div>
+    </footer>
+  </div>
+
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/javascript.js"></script>
+  <!--Slick-->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <!--Hero Slider-->
+  <script src="hero-slider/js/jquery-2.1.1.js"></script>
+  <script src="hero-slider/js/main.js"></script> <!-- Resource jQuery -->
+
+</body>
+</html>
+
