@@ -62,7 +62,7 @@ body {
 
 .menu li a{
   margin-right: 2rem;
-  padding: .3rem;
+  padding: .3rem .3rem .3rem .3rem;
   margin-top: 0;
 }
 
@@ -93,12 +93,20 @@ body {
 .top-bar-right li a:active {
     /*background-color: #fdfaf4;*/
     /*border-radius: 35px;*/
-    font-weight: 700;
     color: black;
     border-bottom: 2px solid black;
     border-radius: 0;
     /*border: 2px solid #fdefd9;*/
 }
+
+ul li .menu-active,
+ul li .menu-active:hover {
+    color: #646363;
+    border-bottom: 2px solid #646363;
+    border-radius: 0;
+    font-weight: 400;
+}
+
 
 @media only screen and (max-width: 1000px){
     .menu li a{
@@ -140,7 +148,7 @@ body {
     }
     .menu li{
         display: block;
-        padding: 5px 5px 5px 10px;
+        padding: 0 5px 5px 10px;
     }
     .menu li:first-child {
         margin-top: 15px;
@@ -150,6 +158,13 @@ body {
     .menu li a{
         text-align: left;
     }
+
+    .menu .menu-active,
+    .menu .menu-active:active,
+    .menu .menu-active:hover {
+        border-bottom: none;
+    }
+
     .dropdown {
         background-color: #faf9fa;
     }
@@ -224,14 +239,10 @@ body {
 
 footer {
   /*background-color: #878787;*/
-  background-color:#fdefd9;
-  height: 25px;
-  /*border-top: 2px solid #5a5a5a;*/
-  /*position: absolute;*/
-  bottom:10px;
-  /*width: 100%;*/
+  background-color:#fff;
+  height: 30px;
+  border-top: 1px solid #5a5a5a;
   font-family:'Josefin Sans', sans-serif;
-  margin-top: 40px;
 }
 
 
@@ -287,17 +298,57 @@ section.module.parallax {
   background-size: cover;
 }
 section.module.parallax h1 {
-  font-size: 48px;
+  font-size: 28px;
   line-height: 600px;
   text-align: center;
   font-family: 'Abril Fatface', serif;
-  color: #fdefd9;
+  color: black;
   /*color: #ff3f4d;*/
   text-shadow: 1px 1px rgba(0, 0, 0, 0.44);
 
 }
 section.module.parallax-1 {
-  background-image: url("../img/kids-parallax3.jpg");
+    background-image: url("../img/kids-parallax3.jpg");
+}
+
+section.module.parallax-2 {
+     background-image: url("../img/kleinkind-parallax.jpg");
+ }
+
+section.module.parallax-3 {
+    background-image: url("../img/wedding-parallax2.jpg");
+}
+
+section.module.parallax-4 {
+     background-image: url("../img/geschwister-parallax1.jpg");
+}
+
+section.module.parallax-5 {
+     background-image: url("../img/kinder-parallax.jpg");
+ }
+
+section.module.parallax-6 {
+    background-image: url("../img/portrait-parallax.jpg");
+}
+
+section.module.parallax-7 {
+    background-image: url("../img/familie-parallax.jpg");
+}
+
+section.module.parallax-8 {
+    background-image: url("../img/food.jpg");
+}
+
+section.module.parallax-9 {
+    background-image: url("../img/reportage-parallax.jpg");
+}
+
+section.module.parallax-10 {
+    background-image: url("../img/mode-parallax.jpg");
+}
+
+section.module.parallax-12 {
+    background-image: url("../img/tina-parallax-12.jpg");
 }
 
 @media all and (min-width: 600px) {
@@ -313,7 +364,7 @@ section.module.parallax-1 {
 }
 @media all and (min-width: 960px) {
   section.module.parallax h1 {
-    font-size: 160px;
+    font-size: 110px;
   }
 }
 
@@ -322,6 +373,22 @@ section.module.parallax-1 {
   position: absolute;
   z-index: 999;
     margin-left: 0;
+}
+
+.thumb {
+    position: relative;
+    padding: 15px;
+}
+
+.thumb p{
+    left: 0;
+    position: absolute;
+    text-align: center;
+    bottom: 35px;
+    width: 100%;
+    background: #faf9fa;
+    opacity: .8;
+    color: #000;
 }
 
 .thumb img {
@@ -371,13 +438,14 @@ section.module.parallax-1 {
 }
 
 .category-background img {
-  box-shadow: 3px 3px 2px #f5f4f4;
-}
+     box-shadow: 3px 3px 2px #f5f4f4;
+ }
 
 .cat-name h3 {
   text-align: center;
   font-family: "Josefin Sans", serif;
   text-transform: lowercase;
+    font-size: 2rem;
   /*text-transform: capitalize;*/
 }
 
@@ -475,4 +543,185 @@ body {
         margin-top: 10px;
         font-size: 1.5rem;
     }
+    .cat-name h3 {
+        font-size: 1.1rem;
+    }
+}
+
+.form-control {
+    width: 40%;
+    background-color: #efefef;
+}
+
+.form-control:focus {
+    border-color: #f54f14;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(233, 81, 17, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px #f54f14;
+}
+
+#contact-form {
+    padding-left: 10%;
+    padding-top: 30px;
+}
+
+label{
+    margin-bottom: 0;
+}
+
+form span {
+    color: red;
+}
+
+.form-inline {
+    padding-bottom: 10px;
+}
+button {
+    margin-top: 2px;
+}
+
+.btn {
+    margin-top: 20px;
+    padding: 7px;
+    border: 1px solid grey;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #efefef;
+}
+
+.btn:hover {
+    border: 1px solid white;
+    background-color: #acacac;
+}
+
+/*End contact form*/
+
+/*#contact-body{*/
+/*background-image: url("../img/man-phone-para.jpg");*/
+/*background-attachment: fixed;*/
+/*!*Give the background a fixed position does it not scroll when you scroll*!*/
+/*background-size: contain;*/
+/*background-repeat: no-repeat;*/
+/*position: relative;*/
+/*-webkit-transition: height ease 20s;*/
+/*transition: height ease 20s;*/
+/*}*/
+
+.contact-list {
+    width: 30%;
+    display: inline-block;
+    padding-top: 50px;
+    padding-left: 10%
+}
+
+.contact-list li {
+    list-style-type: none;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.contact-list span {
+    text-align: center;
+    padding-top: 3%;
+}
+
+.teddy-container {
+    position: relative;
+}
+
+.teddy-container img {
+    position: absolute;
+    right: -20px;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 713px){
+    .teddy-container img{
+        visibility: hidden;
+    }
+    .teddy img {
+        width: 100px;
+    }
+}
+
+.teddy {
+    margin-right:10px;
+}
+.teddy img {
+    float: right;
+}
+
+.kontakt-text {
+    margin-top: 120px;
+}
+
+.preise-text {
+    margin-top: 90px;
+}
+
+.kontakt-text p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.kontakt-text span {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 888px){
+    .kontakt-text {
+        margin-top: 100px;
+    }
+    .preise-text {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .kontakt-text {
+        margin-top: 50px;
+        font-size: 16px;
+    }
+
+    .preise-text {
+        margin-top: 0;
+    }
+
+    .form-control {
+        width: 90%;
+    }
+}
+
+.footer-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.tina-portrait {
+    margin-top: 50px;
+    background-image: url("../img/tina-portrait.jpg");
+    height: 700px;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.all-categories .zuruck {
+    text-align: center;
+    position: fixed;
+    background: white;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 8px;
+    margin-left: 5px;
+    top: 50px;
+}
+
+.all-categories .zuruck:hover {
+    background: rgb(254, 254, 254);
+    border: 1px solid white;
 }
